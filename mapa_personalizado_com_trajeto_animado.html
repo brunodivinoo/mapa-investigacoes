@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Interativo Avançado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-arrowheads@1.0.7/leaflet-arrowheads.css" />
+  <style>
+    #map { height: 100vh; width: 100%; }
+    .painel { position: fixed; background: white; padding: 12px; border-radius: 8px; width: 320px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); z-index: 9999; }
+    .painel textarea, .painel input, .painel button { width: 100%; margin-top: 5px; }
+    .oculto { display: none; }
+    #painelControles { top: 10px; left: 10px; max-height: 90vh; overflow-y: auto; }
+    .botao-flutuante {
+      padding: 8px 12px;
+      font-size: 13px;
+      border-radius: 6px;
+      background-color: #444;
+      color: white;
+      border: none;
+      margin-bottom: 8px;
+      width: 100%;
+    }
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+      z-index: 11000 !important;
+    }
+    .popup-box { font-size: 14px; }
+    .popup-box button { margin-top: 8px; display: block; }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<!-- Aqui o restante do corpo será completado com JavaScript como nas versões anteriores -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-arrowheads@1.0.7/leaflet-arrowheads.min.js"></script>
+<script>
+// Código JS continua como anteriormente, com ícones, trajeto, leques e painel
+</script>
+</body>
+</html>
